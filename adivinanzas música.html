@@ -1,0 +1,130 @@
+<html>
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Carattere&family=Lugrasimo&family=Metal&family=Romanesco&display=swap" rel="stylesheet">
+        <title>Juego de Adivinanzas.</title>
+     </head>
+     <body background="corcheas.jpg">
+
+         <script>
+
+         function Gradeit()
+         {
+
+        function getselectedIndex () {
+        return document.quiz.q1.selectedIndex
+        return document.quiz.q2.selectedIndex
+        return document.quiz.q3.selectedIndex
+        return document.quiz.q4.selectedIndex
+        return document.quiz.q5.selectedIndex
+        }
+    
+        var Answers=new Array(3,2,3,1,1)
+        var UserAnswer = new Array(document.quiz.q1.selectedIndex,document.quiz.q2.selectedIndex,document.quiz.q3.selectedIndex,document.quiz.q4.selectedIndex,document.quiz.q5.selectedIndex)
+        var count0 = 0
+        var outcome = new Array(5)
+
+        var Answers=new Array(3,1,3,1,1)
+        var UserAnswer = new Array(document.quiz.q1.selectedIndex,document.quiz.q2.selectedIndex,document.quiz.q3.selectedIndex,document.quiz.q4.selectedIndex,document.quiz.q5.selectedIndex)
+        var count0 = 0
+        var outcome = new Array(5)
+
+        if (Answers[0] == UserAnswer[0])
+        {count0 = count0 + 1}
+        else
+        {count0 = 0}
+
+        if (Answers[1] == UserAnswer[1])
+        {count1 = count0 + 1}
+        else
+        {count1 = count0}
+
+        if (Answers[2] == UserAnswer[2])
+        {count2 = count1 + 1}
+        else
+        {count2 = count1}
+
+        if (Answers[3] == UserAnswer[3])
+        {count3 = count2 + 1}
+        else
+        {count3 = count2}
+
+        if (Answers[4] == UserAnswer[4])
+        {count4 = count3 + 1}
+        else
+        {count4 = count3}
+
+        alert("Tiene" + count4 + "/5 aciertos.")
+     }
+
+         </script>
+
+         <style>
+            body {
+                font-family: "Lugrasimo", cursive;
+                font-size: 14px;
+                color: white;
+                text-align: center;
+            }
+         </style>
+
+        <h1>
+        <form name="quiz">JUEGO DE LAS ADIVINANZAS.
+        <p>
+        SECCIÓN MÚSICA.
+        <p>
+        <label> *1) ¿Que compositor Aleman del periodo barroco compuso Los Conciertos de Bradenburgo 
+        <br>Variaciones Goldberg y Tocata y Fuga en Re menor?</label>
+        <select name="q1">
+        <option selected outcome>Seleccione una opción
+        <option>Arcangelo Corelli
+        <option>Antonio Vivaldi
+        <option>Johann Sebastian Bach
+        </select>
+        <p>
+        
+        <label> *2) ¿Cual de estos compositores no pertenece al periodo del Clasisismo?</label>
+        <select name="q2">
+        <option selected Outcome>Seleccione una opción
+        <option>Arcangelo Corelli
+        <option>Wolfgang Amadeus Mozart
+        <option>Franz Joseph Haydn
+        </select>
+        <p>
+
+        <label> *3) ¿Que compositor ganó un Óscar honorífico en el 2006 y es conocido por 
+        <br>componer bandas sonoras del genero western?</label>
+        <select name="q3">
+        <option selected outcome>Seleccione una opción
+        <option>John Williams
+        <option>Hans Zimmer
+        <option>Ennio Morricone
+        </select>
+        <p>
+
+        <label> *4) ¿Que solista no inicio su carrera en la decada del 50?</b>
+        <select name="q4">
+        <option selected outcome>Seleccione una opción
+        <option>Muddy Waters
+        <option>Johnny Cash
+        <option>Chuck Berry
+        </select>
+        <p>
+
+        <b> *5) ¿Cual de estas bandas no inicio en la decada del 60?</b>
+        <select name="q5">
+        <option selected outcome>Seleccione una opción
+        <option>The Beatles
+        <option>Led Zeppelin
+        <option>Black Sabbath
+        </select>
+        <p>
+
+    <INPUT TYPE="button" VALUE="Aciertos" onclick="Gradeit()" /> 
+    </FORM>
+    </h1>
+</BODY>
+</html>

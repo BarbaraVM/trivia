@@ -1,0 +1,54 @@
+
+<html>
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+            <title>JUEGO DE TRIVIA</title>
+        </head>
+        <body background="menu de enlaces.jpg">
+             <h1>JUEGO DE LAS ADIVINANZAS.
+               <br>
+               <br>Seccion de Artes.
+             </h1>
+               <br>
+             <h2>Seleccione la categoria</h2>
+   
+            <h2>
+            <form name="DropDown">
+                <select name="DDlinks">
+                    <option selected>Seleccione un vinculo</option>
+                    <option value="ADIVINANZAS PELICULAS.html">Sección Cine</option>
+                    <option value="Adivinanzas Arte.html">Sección Arte visual</option>
+                    <option value="adivinanzas música.html">Seccion Música</option>
+                </select>
+            <input type="BUTTON" value="Clic para entrar" onClick="LinkUp()" />
+            </fORM>
+            </h2>
+        </body>
+
+        <script>
+            function LinkUp() {
+                
+                var number = document.DropDown.DDlinks.selectedIndex;
+                location.href = document.DropDown.DDlinks.options[number].value;
+                
+            }
+        </script>
+
+        <style>
+            body {
+                margin: 0%;
+                padding: 100px;
+                font-size: 24px;
+                font-family: "Monoton", sans-serif, "Ultra", serif;
+                font-weight: 400;
+                text-align: center;
+            }
+
+        </style>
+        
+   </html>

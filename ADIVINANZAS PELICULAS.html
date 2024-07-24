@@ -1,0 +1,122 @@
+<html>
+     <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+        <title>Juego de las Adivinanzas.</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Sedan+SC&display=swap" rel="stylesheet">
+     </head>
+     <body background="collage.jpg">
+
+         <script>
+
+         function Gradeit()
+    {
+        function getselectedIndex () {
+        return document.quiz.q1.selectedIndex
+        return document.quiz.q2.selectedIndex
+        return document.quiz.q3.selectedIndex
+        return document.quiz.q4.selectedIndex
+        return document.quiz.q5.selectedIndex
+         }
+    
+        var Answers=new Array(1,1,3,2,3)
+        var UserAnswer = new Array(document.quiz.q1.selectedIndex,document.quiz.q2.selectedIndex,document.quiz.q3.selectedIndex,document.quiz.q4.selectedIndex,document.quiz.q5.selectedIndex)
+        var count0 = 0
+        var outcome = new Array(5)
+
+        if (Answers[0] == UserAnswer[0])
+        {count0 = count0 + 1}
+        else
+        {count0 = 0}
+
+        if (Answers[1] == UserAnswer[1])
+        {count1 = count0 + 1}
+        else
+        {count1 = count0}
+
+        if (Answers[2] == UserAnswer[2])
+        {count2 = count1 + 1}
+        else
+        {count2 = count1}
+
+        if (Answers[3] == UserAnswer[3])
+        {count3 = count2 + 1}
+        else
+        {count3 = count2}
+
+        if (Answers[4] == UserAnswer[4])
+        {count4 = count3 + 1}
+        else
+        {count4 = count3}
+
+        alert("Tiene" + count4 + "/5 aciertos.")
+     }
+         </script>
+
+         <style>
+            body {
+               text-align: center;
+               color: lime;
+               font-family: "Sedan SC", serif;
+             }
+         </style>
+
+        <h1>
+        <form name="quiz">
+    
+         <h2>JUEGO DE LAS ADIVINANZAS</h2>
+
+         <h3>SECCIÓN PELICULAS</h3>
+         <p>
+        <label>*1: ¿Cuál de éstas películas de animales no es del género de terror?</label>
+        <select name="q1">
+        <option select outcome>Seleccione una opción
+        <option>Colmillo Blanco
+        <option>Cujo
+        <option>Los Pájaros
+        </select>
+        <p>
+        
+        <label>*2: ¿Que película se basó en el libro de J.R.R.Tolkien?</label>
+        <select name="q2">
+        <option select outcome>Seleccione una opción
+        <option>El Señor de los Anillos
+        <option>Harry Potter
+        <option>Las Crónicas de Narnia
+        </select>
+        <p>
+
+        <label> *3: ¿Cual de éstas películas bélicas no está basada en hechos reales?</label>
+        <select name="q3">
+        <option selected outcome>Seleccione una opción
+        <option>La Lista de Schindler
+        <option>Hasta el Último Hombre
+        <option>Operación Overlord
+        </select>
+        <p>
+
+        <label> *4: ¿Cual de éstas opciones no ganó el oscar a mejor película?</label>
+        <select name="q4">
+        <option selected outcome>Seleccione una opción
+        <option>El Silencio de los Inocentes
+        <option>Taxi Driver
+        <option>Rocky
+        </select>
+        <p>
+
+        <label> *5: ¿Cual de éstas peliculas de terror no se estrenó la decada del 70?</label>
+        <select name="q5">
+        <option selected outcome>Seleccione una opción
+        <option>El Amanecer de los Muertos
+        <option>El Exorcista
+        <option>El Resplandor
+        </select>
+        <p>
+
+     <INPUT TYPE="button" VALUE="Aciertos" onclick="Gradeit()" />
+        </form>
+     </h1>
+     </body>
+</html>
